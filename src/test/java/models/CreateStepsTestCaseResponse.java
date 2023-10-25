@@ -2,10 +2,8 @@ package models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
-
-import java.util.List;
-
 @Data
-public class CreateTestCaseBody {
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class CreateStepsTestCaseResponse {
     String name;
 }
